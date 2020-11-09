@@ -54,6 +54,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Conda/
+dist/
+Assets/StreamingAssets/
 
 # Crashlytics generated file
 crashlytics-build.properties
