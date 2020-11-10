@@ -35,6 +35,7 @@ MonoBehaviour:
     - com.virgis.mdal
     - com.virgis.pdal
     - jillejr.newtonsoft.json-for-unity
+    - com.nol1fe.delaunator
     m_IsDefault: 0
     m_Capabilities: 0
   - m_Id: scoped:npmjs
@@ -60,6 +61,7 @@ MonoBehaviour:
       - com.virgis.mdal
       - com.virgis.pdal
       - jillejr.newtonsoft.json-for-unity
+      - com.nol1fe.delaunator
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
@@ -73,4 +75,5 @@ MonoBehaviour:
     - com.virgis.mdal
     - com.virgis.pdal
     - jillejr.newtonsoft.json-for-unity
+    - com.nol1fe.delaunator
     m_SelectedScopeIndex: 0

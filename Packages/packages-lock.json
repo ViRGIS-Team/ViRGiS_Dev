@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.nol1fe.delaunator": {
-      "version": "https://github.com/nol1fe/delaunator-sharp-unitypackage.git",
-      "depth": 0,
-      "source": "git",
+      "version": "1.0.5",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {},
-      "hash": "8ed55ff10032835a9a2e3a83ec4528155407e7a2"
+      "url": "https://package.openupm.com"
     },
     "com.unity.collab-proxy": {
       "version": "1.3.9",
@@ -167,7 +167,7 @@
       "url": "https://packages.unity.com"
     },
     "com.virgis.gdal": {
-      "version": "3.1.2",
+      "version": "3.1.4-b2",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -190,7 +190,7 @@
       "url": "https://package.openupm.com"
     },
     "com.virgis.mdal": {
-      "version": "0.7.2-b2",
+      "version": "0.7.2-b3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -200,7 +200,7 @@
       "url": "https://package.openupm.com"
     },
     "com.virgis.pdal": {
-      "version": "2.2.0",
+      "version": "2.2.0-b3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -209,22 +209,29 @@
       },
       "url": "https://package.openupm.com"
     },
+    "com.virgis.project_ns": {
+      "version": "file:/Users/paulharwood/Project-Namespace",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.virgis.virgis_v2": {
-      "version": "file:C:/Users/runes/Documents/GitHub/ViRGiS_v2",
+      "version": "file:/Users/paulharwood/ViRGiS_v2",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.virgis.gdal": "3.1.2",
+        "com.virgis.gdal": "3.1.4-b2",
         "com.virgis.geojson.net": "1.2.16",
         "com.virgis.geometry3sharp": "1.0.4",
-        "com.virgis.mdal": "0.7.2-b2",
-        "com.virgis.pdal": "2.2.0",
+        "com.virgis.mdal": "0.7.2-b3",
+        "com.virgis.pdal": "2.2.0-b3",
         "com.unity.ugui": "1.0.0",
         "com.unity.visualeffectgraph": "8.2.0",
         "com.unity.xr.interaction.toolkit": "0.9.4-preview",
         "com.unity.xr.management": "3.2.15",
         "com.unity.inputsystem": "1.0.0",
-        "io.extendreality.zinnia.unity": "1.25.1"
+        "io.extendreality.zinnia.unity": "1.25.1",
+        "com.nol1fe.delaunator": "1.0.5"
       }
     },
     "io.extendreality.malimbe": {
