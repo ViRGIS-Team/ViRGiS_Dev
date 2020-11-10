@@ -1,0 +1,271 @@
+{
+  "version": "2.0.0a3",
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      1.377283,
+      51.299457
+    ]
+  },
+  "scale": 1.33294,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        1.3773203457624039,
+        51.299599162101032,
+        14.361709594726563
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "visible": false,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "label": "SB_No"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "001",
+      "display-name": null,
+      "datatype": "Vector",
+      "source": "test_data/sbs_points.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.1,
+                0.1,
+                0.1
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "002",
+      "display-name": null,
+      "datatype": "Vector",
+      "source": "test_data/all_points.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.2,
+                0.2,
+                0.2
+              ]
+            },
+            "label": "name"
+          },
+          "point": {
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "003",
+      "display-name": null,
+      "datatype": "Vector",
+      "source": "test_data/lines.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": {
+          "ramp": "heat_map"
+        },
+        "filter": null,
+        "bbox": null
+      },
+      "id": "004",
+      "display-name": null,
+      "datatype": "DEM",
+      "source": "test_data/bathy2.tif",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs "
+    }
+  ]
+}

@@ -210,7 +210,7 @@
       "url": "https://package.openupm.com"
     },
     "com.virgis.virgis_v2": {
-      "version": "file:/Users/paulharwood/ViRGiS_v2",
+      "version": "file:C:/Users/runes/Documents/GitHub/ViRGiS_v2",
       "depth": 0,
       "source": "local",
       "dependencies": {
