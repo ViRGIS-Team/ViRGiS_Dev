@@ -302,7 +302,7 @@ namespace Mapbox.Unity.MeshGeneration.Data
 					_rasterData.Compress(false);
 				}
 
-				MeshRenderer.sharedMaterial.mainTexture = _rasterData;
+				MeshRenderer.sharedMaterial.SetTexture("_BaseMap",_rasterData);
 
 				RasterDataState = TilePropertyState.Loaded;
 			}

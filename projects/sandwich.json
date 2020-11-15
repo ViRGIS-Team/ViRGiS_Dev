@@ -8,33 +8,45 @@
       51.299457
     ]
   },
-  "scale": 22.6962967,
+  "scale": 22.7448044,
+  "default_proj": null,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3845992104003533,
-        51.306886373319031,
-        183.39274597167969
+        1.3770955815737975,
+        51.29586173501658,
+        125.89878082275391
       ]
     }
   ],
   "recordsets": [
     {
-      "properties": {
-        "mapscale": 15,
-        "map_size": 10
-      },
       "id": "_map_",
       "display-name": "MapBox Map",
       "datatype": "MapBox",
       "source": null,
       "position": null,
       "transform": null,
+      "properties": {
+        "units": null,
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null,
+        "mapscale": 15,
+        "map_size": 10
+      },
       "proj4": null
     },
     {
+      "id": "001",
+      "display-name": "Example Points",
+      "datatype": "Vector",
+      "source": "test_data/waypoint27092019up.geojson",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "point": {
@@ -69,17 +81,19 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "001",
-      "display-name": "Example Points",
-      "datatype": "Vector",
-      "source": "test_data/waypoint27092019up.geojson",
-      "position": null,
-      "transform": null,
       "proj4": null
     },
     {
+      "id": "002",
+      "display-name": "Eample Lines",
+      "datatype": "Vector",
+      "source": "test_data/lines.geojson",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "line": {
@@ -142,17 +156,19 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "002",
-      "display-name": "Eample Lines",
-      "datatype": "Vector",
-      "source": "test_data/lines.geojson",
-      "position": null,
-      "transform": null,
       "proj4": null
     },
     {
+      "id": "003",
+      "display-name": "Polygons",
+      "datatype": "Vector",
+      "source": "test_data/polys.geojson",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "line": {
@@ -243,17 +259,43 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "003",
-      "display-name": "Polygons",
-      "datatype": "Vector",
-      "source": "test_data/polys.geojson",
-      "position": null,
-      "transform": null,
       "proj4": null
     },
     {
+      "id": "004",
+      "display-name": "Eample .PLY Point Cloud",
+      "datatype": "PointCloud",
+      "source": "test_data/test.ply",
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          1.3792295414138362,
+          51.301775863301813,
+          70.366569519042969
+        ]
+      },
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.393473059,
+          -0.3822132,
+          -0.320936441,
+          0.7720699
+        ],
+        "scale": [
+          46.4688835,
+          46.4688835,
+          46.4688835
+        ]
+      },
       "properties": {
         "units": {
           "point": {
@@ -316,77 +358,13 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
-      },
-      "id": "004",
-      "display-name": "Eample .PLY Point Cloud",
-      "datatype": "PointCloud",
-      "source": "test_data/test.ply",
-      "position": {
-        "type": "Point",
-        "coordinates": [
-          1.3792295414138362,
-          51.301775863301813,
-          70.366569519042969
-        ]
-      },
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          0.393473059,
-          -0.3822132,
-          -0.320936441,
-          0.7720699
-        ],
-        "scale": [
-          46.4688835,
-          46.4688835,
-          46.4688835
-        ]
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
       "proj4": null
     },
     {
-      "properties": {
-        "units": {
-          "handle": {
-            "color": [
-              0.0,
-              1.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
       "id": "005",
       "display-name": "Example .OBJ",
       "datatype": "Mesh",
@@ -417,9 +395,6 @@
           130.328751
         ]
       },
-      "proj4": null
-    },
-    {
       "properties": {
         "units": {
           "handle": {
@@ -454,8 +429,13 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
+      "proj4": null
+    },
+    {
       "id": "006",
       "display-name": "TIN Paraboloid",
       "datatype": "Mdal",
@@ -486,9 +466,53 @@
           0.9578706
         ]
       },
+      "properties": {
+        "units": {
+          "handle": {
+            "color": [
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
+      },
       "proj4": null
     },
     {
+      "id": "007",
+      "display-name": "WFS All data Points",
+      "datatype": "Vector",
+      "source": "https://swbayproject.com/qgisserver?MAP=/var/qgis/swbay_server.qgs&typename=all_data_points",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "point": {
@@ -525,14 +549,10 @@
         "filter": null,
         "bbox": null,
         "source-type": 1,
-        "read-only": true
+        "read-only": true,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "007",
-      "display-name": "WFS All data Points",
-      "datatype": "Vector",
-      "source": "https://swbayproject.com/qgisserver?MAP=/var/qgis/swbay_server.qgs&typename=all_data_points",
-      "position": null,
-      "transform": null,
       "proj4": null
     }
   ]
