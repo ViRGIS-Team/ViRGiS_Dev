@@ -35,7 +35,7 @@ public  class MapInit : MapInitialize{
                     mbLayer.SetProperties(st, lt, et, props.MapSize);
                 }
                 mbLayer.Initialize(appState.project.Origin.Coordinates.Vector2d(), props.MapScale);
-                temp = mbLayer.GetComponent<ContainerLayer>();
+                temp = mbLayer.GetComponent<MapBoxLayer>();
                 temp.SetMetadata(thisLayer);
                 temp.changed = false;
                 break;

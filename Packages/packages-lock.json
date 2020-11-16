@@ -193,11 +193,10 @@
       "url": "https://package.openupm.com"
     },
     "com.virgis.geometry3sharp": {
-      "version": "1.0.4",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://package.openupm.com"
+      "version": "file:C:/Users/runes/Documents/GitHub/geometry3Sharp",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
     },
     "com.virgis.mdal": {
       "version": "0.7.2-b5",
