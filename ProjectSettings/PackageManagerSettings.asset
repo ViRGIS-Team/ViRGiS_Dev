@@ -31,6 +31,7 @@ MonoBehaviour:
     - com.openupm
     - com.virgis.gdal
     - com.virgis.geojson.net
+    - com.virgis.geometry3sharp
     - com.virgis.mdal
     - com.virgis.pdal
     - jillejr.newtonsoft.json-for-unity
@@ -56,6 +57,7 @@ MonoBehaviour:
       - com.openupm
       - com.virgis.gdal
       - com.virgis.geojson.net
+      - com.virgis.geometry3sharp
       - com.virgis.mdal
       - com.virgis.pdal
       - jillejr.newtonsoft.json-for-unity
@@ -69,6 +71,7 @@ MonoBehaviour:
     - com.openupm
     - com.virgis.gdal
     - com.virgis.geojson.net
+    - com.virgis.geometry3sharp
     - com.virgis.mdal
     - com.virgis.pdal
     - jillejr.newtonsoft.json-for-unity
