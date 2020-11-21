@@ -117,8 +117,8 @@ MonoBehaviour:
         addCollider: 0
       modificationOptions:
         sampleCount: 10
-        useRelativeHeight: 0
-        earthRadius: 1000
+        useRelativeHeight: 1
+        earthRadius: 6000
       unityLayerOptions:
         addToLayer: 0
         layerId: 0
@@ -152,5 +152,5 @@ MonoBehaviour:
       locationPrefabList: []
   _tileProvider: {fileID: 0}
   _previewOptions:
-    isPreviewEnabled: 0
+    isPreviewEnabled: 1
   tileMaterial: {fileID: 2100000, guid: 8cd6d9eb1c13b467c86cfdb221872a0f, type: 2}
