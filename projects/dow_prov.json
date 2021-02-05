@@ -15,28 +15,39 @@
     {
       "type": "Point",
       "coordinates": [
-        -2.015355683493385,
-        54.154387911394281,
-        362.20877075195313
+        -2.0211189054176013,
+        54.162990893834589,
+        332.38189697265625
       ]
     }
   ],
   "recordsets": [
     {
-      "properties": {
-        "mapscale": 15,
-        "map_size": 2,
-        "elevation_layer_type": "TerrainWithElevation"
-      },
       "id": "_map_",
       "display-name": "MapBox Map",
       "datatype": "MapBox",
       "source": null,
       "position": null,
       "transform": null,
+      "properties": {
+        "units": null,
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null,
+        "mapscale": 15,
+        "map_size": 2,
+        "elevation_layer_type": "TerrainWithElevation"
+      },
       "proj4": null
     },
     {
+      "id": "001",
+      "display-name": "Dow Prov Main",
+      "datatype": "Vector",
+      "source": "test_data/DowProv.geojson",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "point": {
@@ -127,17 +138,19 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "001",
-      "display-name": "Dow Prov Main",
-      "datatype": "Vector",
-      "source": "test_data/DowProv.geojson",
-      "position": null,
-      "transform": null,
       "proj4": null
     },
     {
+      "id": "002",
+      "display-name": "Dow Prov Poly",
+      "datatype": "Vector",
+      "source": "test_data/DowProvPoly.geojson",
+      "position": null,
+      "transform": null,
       "properties": {
         "units": {
           "point": {
@@ -228,14 +241,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "bbox": null
+        "bbox": null,
+        "mapscale": 0,
+        "map_size": 0
       },
-      "id": "002",
-      "display-name": "Dow Prov Poly",
-      "datatype": "Vector",
-      "source": "test_data/DowProvPoly.geojson",
-      "position": null,
-      "transform": null,
       "proj4": null
     }
   ]

@@ -320,6 +320,7 @@ namespace Virgis
                 RaycastHit hitInfo = data.CurrentPointsCastData.HitData.Value;
                 currentPointerHit = hitInfo.transform;
                 selectedDistance = hitInfo.distance;
+                Vector3 currentPoint = hitInfo.point;
                 from = hitInfo.point;
                 select(appState.ButtonStatus);
                 if (addVertexState)
@@ -330,7 +331,7 @@ namespace Virgis
                 {
                     RemoveVertex();
                 }
-                currentPointerHit?.SendMessage("Hover", SendMessageOptions.DontRequireReceiver);
+                currentPointerHit?.SendMessage("Hover", currentPoint, SendMessageOptions.DontRequireReceiver);
             }
 
         }
