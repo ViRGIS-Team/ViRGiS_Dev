@@ -153,11 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSpeed: 0.2
-  moveDeadzone: 0.5
-  repeatDelay: 0.5
-  repeatRate: 0.1
-  trackedDeviceDragThresholdMultiplier: 2
+  m_ClickSpeed: 0.2
+  m_MoveDeadzone: 0.5
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 2
   m_MaxTrackedDeviceRaycastDistance: 1000
   m_EnableXRInput: 1
   m_EnableMouseInput: 1
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changed: 1
+  isContainer: 0
   appState: {fileID: 4939495243264241907, guid: 34407c25ed7b4504f8fac50e271f6224, type: 3}
   MapBoxLayer: {fileID: 1984790883259022569, guid: 19072979dd9ffe34f833e8c8421508da, type: 3}
   VectorLayer: {fileID: 2704245247459435307, guid: 18262d5c25925624a9c626e3a631afcd, type: 3}
@@ -243,6 +244,8 @@ MonoBehaviour:
   MeshLayer: {fileID: 103705025751674337, guid: 7899972cde4ea4baea27a4eae07bf527, type: 3}
   MDALLayer: {fileID: 103705025751674337, guid: 5af340f534085894691b55244f1d35c8, type: 3}
   DemLayer: {fileID: 103705025751674337, guid: fe6742c22b3fe6d49b95575420f90ead, type: 3}
+  XSectLayer: {fileID: 0}
+  BoreHoleLayer: {fileID: 0}
 --- !u!1 &80894001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
@@ -276,6 +279,7 @@ MonoBehaviour:
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
+  m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -296,29 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bb71e1c684e104eaf0a41c9f7488e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 1978643838}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
-  m_StartingSelectedInteractable: {fileID: 0}
-  m_OnHoverEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_EnableUIInteraction: 1
-  m_RaycastMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  movementDeadzone: 0.5
 --- !u!1 &154901519
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +376,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &154901521
@@ -1158,7 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f099c2dc721fc400fa27c52dd4aaeb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackingSpace: {fileID: 236294581}
+  MovementVector: {fileID: 236294582}
   MainCamera: {fileID: 2135553367}
   DesktopAcceleration: 1
   XAxisSensitivity: 0
@@ -2200,6 +2182,7 @@ MonoBehaviour:
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
+  m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -3058,6 +3041,7 @@ MonoBehaviour:
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
+  m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2

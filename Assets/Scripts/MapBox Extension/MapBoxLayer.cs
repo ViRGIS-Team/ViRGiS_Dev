@@ -22,8 +22,9 @@ namespace Virgis {
             //do nothing
         }
 
-        protected override void _draw() {
+        protected override Task _draw() {
             // do nothing
+            return Task.CompletedTask;
         }
 
         protected override Task _save() {
