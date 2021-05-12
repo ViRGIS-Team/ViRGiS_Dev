@@ -2,11 +2,12 @@
 using UnityEngine;
 using Virgis;
 using Project;
-using System.Threading.Tasks;
-using Mapbox.Unity.Map;
 using System;
+using Mapbox.Unity.Map;
 
-public  class MapInit : MapInitialize{
+
+public class MapInit : MapInitialize
+{
 
     //References to the Prefabs to be used for Layers
     public GameObject MapBoxLayer;
@@ -16,11 +17,20 @@ public  class MapInit : MapInitialize{
     public GameObject MeshLayer;
     public GameObject MDALLayer;
     public GameObject DemLayer;
+    public GameObject XSectLayer;
+    public GameObject BoreHoleLayer;
 
 
-    public override async Task<VirgisLayer> createLayer(RecordSet thisLayer){
-        VirgisLayer temp = null;  
-        switch (thisLayer.DataType){
+    public override void onLoad()
+    {
+        // do nothing
+    }
+
+    public override VirgisLayer createLayer(RecordSet thisLayer)
+    {
+        VirgisLayer temp = null;
+        switch (thisLayer.DataType)
+        {
             case RecordSetDataType.MapBox:
                 GeogData props = thisLayer.Properties;
                 VirgisAbstractMap mbLayer = Instantiate(MapBoxLayer, transform).GetComponent<VirgisAbstractMap>();
@@ -40,27 +50,27 @@ public  class MapInit : MapInitialize{
                 temp.changed = false;
                 break;
             case RecordSetDataType.Vector:
-                temp = await Instantiate(VectorLayer, transform).GetComponent<OgrLayer>().Init(thisLayer);
+                temp = Instantiate(VectorLayer, transform).GetComponent<OgrLayer>();
                 break;
             case RecordSetDataType.Raster:
-                temp = await Instantiate(RasterLayer, transform).GetComponent<RasterLayer>().Init(thisLayer as RecordSet);
+                temp = Instantiate(RasterLayer, transform).GetComponent<RasterLayer>();
                 break;
             case RecordSetDataType.PointCloud:
-                temp = await Instantiate(PointCloud, transform).GetComponent<PointCloudLayer>().Init(thisLayer as RecordSet);
+                temp = Instantiate(PointCloud, transform).GetComponent<PointCloudLayer>();
                 break;
             case RecordSetDataType.Mesh:
-                temp = await Instantiate(MeshLayer, transform).GetComponent<MeshLayer>().Init(thisLayer as RecordSet);
+                temp = Instantiate(MeshLayer, transform).GetComponent<MeshLayer>();
                 break;
             case RecordSetDataType.Mdal:
-                temp = await Instantiate(MDALLayer, transform).GetComponent<MdalLayer>().Init(thisLayer as RecordSet);
+                temp = Instantiate(MDALLayer, transform).GetComponent<MdalLayer>();
                 break;
             case RecordSetDataType.DEM:
-                temp = await Instantiate(DemLayer, transform).GetComponent<DemLayer>().Init(thisLayer as RecordSet);
+                temp = Instantiate(DemLayer, transform).GetComponent<DemLayer>();
                 break;
             default:
                 Debug.LogError(thisLayer.DataType.ToString() + " is not known.");
                 break;
-            }
+        }
         return temp;
     }
 }

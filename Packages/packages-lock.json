@@ -252,11 +252,11 @@
       "url": "https://package.openupm.com"
     },
     "com.virgis.project_ns": {
-      "version": "https://github.com/ViRGIS-Team/Project-Namespace.git#1.0.1",
+      "version": "https://github.com/ViRGIS-Team/Project-Namespace.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "0518d9f9a2a38b3de32fe4b1b9981bc02b9a5457"
+      "hash": "1f4b9085fc1a4803b8132ce576a2a06a6c19195a"
     },
     "com.virgis.virgis_v2": {
       "version": "https://github.com/ViRGIS-Team/ViRGiS_v2.git",

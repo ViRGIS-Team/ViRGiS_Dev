@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 using Zinnia.Cast;
 using Zinnia.Pointer;
 using System;
+using UniRx;
 
 namespace Virgis
 {
@@ -16,7 +17,7 @@ namespace Virgis
     /// </summary>
     public class FlyingCam : MonoBehaviour
     {
-        public GameObject trackingSpace; // reference to the active tracking space
+        public Transform MovementVector; // reference to the active tracking space
         public Camera MainCamera; // the main camera for ray tracing
 
         [Header("Constants - Desktop")]                                 //unity controls and constants input - keyboard
@@ -58,7 +59,8 @@ namespace Virgis
         private void Start()
         {
             appState = AppState.instance;
-            appState.trackingSpace = trackingSpace;
+            Debug.Log("AppState awakens");
+            appState.trackingSpace = MovementVector;
             _thisRigidbody = GetComponent<Rigidbody>();
             _thisRigidbody.detectCollisions = false;
             appState.ButtonStatus.Event.Subscribe(select);
